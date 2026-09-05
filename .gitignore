@@ -14,14 +14,12 @@ Seller-frontend/build/
 dist/
 
 # Environment files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-Seller-frontend/.env.local
-Seller-frontend/.env.development.local
-Seller-frontend/.env.test.local
-Seller-frontend/.env.production.local
+.env
+.env.*
+!.env.example
+Seller-frontend/.env
+Seller-frontend/.env.*
+!Seller-frontend/.env.example
 
 # Logs
 npm-debug.log*
