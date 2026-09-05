@@ -1,0 +1,162 @@
+/* customerlist.css */
+.customer_section {
+  padding: 0 16px 32px 16px;
+  width: 100%;
+}
+
+.customerPageHeader {
+  margin-bottom: 24px;
+}
+
+.customerPageHeader h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.customerPageHeader p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: var(--slate-500);
+}
+
+.customerToolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.customerTableCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.customersTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.customersTable th {
+  background: var(--slate-50);
+  color: var(--slate-600);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.customersTable td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--slate-100);
+  font-size: 13px;
+  color: var(--slate-700);
+  vertical-align: middle;
+}
+
+.customerRowClickable {
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.customerRowClickable:hover td {
+  background-color: var(--slate-50);
+}
+
+.customerAvatarCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customerAvatarImg {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 1px solid var(--slate-200);
+}
+
+.customerAvatarInitial {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.customerNameGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.customerFullName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.customerIdLabel {
+  font-size: 11px;
+  color: var(--slate-400);
+}
+
+.customerEmailCell,
+.customerLocationCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--slate-600);
+}
+
+.emailIcon,
+.locIcon {
+  color: var(--slate-400);
+}
+
+.orderCountBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.totalSpentFigure {
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.emptyCustomerState {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--slate-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.emptyCustomerState p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--slate-500);
+}

@@ -1,0 +1,102 @@
+.notification-container-pop {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border: 1px solid orange;
+}
+
+.notification-container-pop .notification-header-pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification-container-pop .notification-header-pop h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.notification-container-pop .notification-close-btn-pop {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.notification-container-pop .notification-list-pop {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notification-container-pop .notification-item-pop {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-container-pop .notification-icon-wrapper-pop {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.notification-container-pop .notification-info-pop {
+  flex-grow: 1;
+}
+
+.notification-container-pop .notification-type-pop {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin: 2px;
+}
+
+.notification-container-pop .notification-amount-pop {
+  font-size: 12px;
+  color: #666;
+  margin: 2px;
+}
+
+.notification-container-pop span {
+  font-size: 11px;
+  color: #666;
+  margin: 2px;
+}
+
+.notification-container-pop .notification-status-pop {
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.notification-container-pop .completed-pop {
+  background: #e0f7e9;
+  color: #28a745;
+}
+
+.notification-container-pop .warning-pop {
+  background: #fff3cd;
+  color: #ff9800;
+}
+
+.notification-container-pop .notification-view-all-pop {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.notification-container-pop .notification-view-all-pop button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,294 @@
+/* orderlist.css */
+.orderlist-container {
+  padding: 0 16px 32px 16px;
+  width: 100%;
+}
+
+.orderListHeader {
+  margin-bottom: 20px;
+}
+
+.orderListHeader h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.orderListHeader p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: var(--slate-500);
+}
+
+.orderlist-container .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.orderlist-container .filters .search-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  width: 360px;
+  gap: 10px;
+  transition: all var(--transition-fast);
+}
+
+.orderlist-container .filters .search-bar:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.orderlist-container .filters .search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: var(--slate-800);
+}
+
+.search-icon-orderlist {
+  color: var(--slate-400);
+  font-size: 14px;
+}
+
+.orderlist-container .button-grp-orderList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.orderlist-container .filter-btn {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate-700);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.orderlist-container .filter-btn:hover {
+  background: var(--slate-50);
+}
+
+.orderlist-container .download-btn {
+  background: var(--primary-light);
+  border: 1px solid #c7d2fe;
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.orderlist-container .download-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.orderlist-container .filter-popup {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  animation: dropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.orderlist-container .filter-popup label {
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--slate-700);
+  font-size: 13px;
+  transition: background var(--transition-fast);
+}
+
+.orderlist-container .filter-popup label:hover,
+.activeFilterOpt {
+  background: var(--slate-100);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Order Table */
+.orderTableWrapper {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.orderlist-container .order-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.orderlist-container .order-table th {
+  background: var(--slate-50);
+  color: var(--slate-600);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.orderlist-container .order-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--slate-100);
+  font-size: 13px;
+  color: var(--slate-700);
+  vertical-align: middle;
+}
+
+.orderlist-container .order-table tr:hover td {
+  background-color: var(--slate-50);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.productThumbWrapper {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+  background: var(--slate-100);
+  flex-shrink: 0;
+}
+
+.productThumbWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productCountChip {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.orderlist-container .order-table td.product-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.orderProductName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.order-id {
+  font-size: 11px;
+  color: var(--slate-400);
+  font-weight: 500;
+}
+
+.qtyBadge {
+  background: var(--slate-100);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--slate-700);
+}
+
+.custName {
+  font-weight: 600;
+  color: var(--slate-800);
+}
+
+.viewOrderBtn {
+  background: var(--slate-100);
+  border: 1px solid var(--slate-200);
+  color: var(--slate-700);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.viewOrderBtn:hover {
+  background: var(--primary-light);
+  border-color: #c7d2fe;
+  color: var(--primary);
+}
+
+.noOrdersCell {
+  text-align: center;
+  padding: 48px 0 !important;
+  color: var(--slate-400);
+}
+
+.orderlist-container .paginationCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.show-results {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--slate-600);
+}
+
+.results-dropdown {
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  outline: none;
+  font-size: 13px;
+}

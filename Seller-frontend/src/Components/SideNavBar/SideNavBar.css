@@ -1,0 +1,203 @@
+/* SideNavBar.css */
+.sideNavOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+}
+
+.sideNavContainer {
+  width: 260px;
+  background-color: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-color);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: all var(--transition-normal);
+  z-index: 999;
+}
+
+.sideNavContainer .brandLogo {
+  padding: 4px 8px 24px 8px;
+  border-bottom: 1px solid var(--slate-100);
+  margin-bottom: 16px;
+}
+
+.brandLogoLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--spiritual-orange-light);
+  flex-shrink: 0;
+}
+
+.logoWrapper img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.brandText h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--slate-900);
+  letter-spacing: -0.01em;
+}
+
+.brandText span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--spiritual-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.menuBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.menuSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--slate-400);
+  letter-spacing: 0.08em;
+  margin: 0 0 8px 12px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.MenuItemsName {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  color: var(--slate-600);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.MenuItemsName:hover {
+  background-color: var(--slate-100);
+  color: var(--slate-900);
+  transform: translateX(2px);
+}
+
+.MenuItemsName.activeNav {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.28);
+}
+
+.MenuItemsName.activeNav .navIconWrapper {
+  color: #ffffff;
+}
+
+.navIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--slate-400);
+  transition: color var(--transition-fast);
+}
+
+.MenuItemsName:hover .navIconWrapper {
+  color: var(--primary);
+}
+
+.navItemTitle {
+  flex: 1;
+}
+
+.activeIndicator {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #ffffff;
+}
+
+.logoutItem {
+  color: var(--danger-text);
+  margin-top: 4px;
+}
+
+.logoutItem:hover {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}
+
+.logoutItem .navIconWrapper {
+  color: var(--danger);
+}
+
+.sideNavCloseBtn {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .sideNavContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-xl);
+    transform: translateX(-100%);
+  }
+
+  .sideNavopen {
+    transform: translateX(0);
+  }
+
+  .sideNavclosed {
+    transform: translateX(-100%);
+  }
+
+  .sideNavCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--slate-400);
+    padding: 0 0 10px 0;
+    cursor: pointer;
+  }
+
+  .sideNavCloseBtn:hover {
+    color: var(--slate-800);
+  }
+}
+  

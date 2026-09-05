@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+Seller-frontend/node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+Seller-frontend/coverage/
+
+# Production build artifacts
+build/
+Seller-frontend/build/
+dist/
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+Seller-frontend/.env.local
+Seller-frontend/.env.development.local
+Seller-frontend/.env.test.local
+Seller-frontend/.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

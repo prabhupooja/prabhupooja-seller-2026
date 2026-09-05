@@ -1,0 +1,101 @@
+.accountStatusContainer{
+    display: flex;
+    width: 70%;
+    background: white;
+    border-radius: 8px;
+    height: 50vh;
+
+
+}
+
+.under-review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+
+}
+
+.under-review-container .review-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.under-review-container .success-text {
+  color: #2ecc71;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.under-review-container .completed-text {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.under-review-container .review-title {
+  color: #ED3B3B;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.under-review-container .review-description {
+  color: #555;
+  font-size: 15px;
+  margin: 15px 20px;
+}
+
+.under-review-container .support-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.under-review-container .support-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+.under-review-container .rejectedContainer {
+    padding: 30px;
+    background: #ffe5e5;
+    border: 1px solid #ff4d4d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .under-review-container .rejectedContainer h3 {
+    font-size: 22px;
+    color: #d80000;
+    margin-bottom: 10px;
+  }
+  
+  .under-review-container .rejectedContainer p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .under-review-container .rejectedContainer button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #d80000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .under-review-container .rejectedContainer button:hover {
+    background: #a60000;
+  }
+
+  
+  

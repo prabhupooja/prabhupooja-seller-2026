@@ -1,0 +1,140 @@
+.Additionalform-container {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.Additionalform-container h2 {
+  text-align: center;
+  color: black;
+}
+
+.Additionalform-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.Additionalform-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.Additionalform-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.Additionalform-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* File Upload Styling */
+.Additionalform-container .file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 99%;
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-indent: 5px;
+  justify-content: space-between;
+  padding: 4px 5px;
+  color: #555;
+  font-size: 15px;
+}
+
+.Additionalform-container .file-input-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Additionalform-container .file-input-wrapper button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #dc4c05;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Additionalform-container .file-input-wrapper button:hover {
+  background: #b03a04;
+}
+
+/* Image Preview */
+.Additionalform-container .preview-img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Submit Button */
+.Additionalform-container .submit-btn,
+.Additionalform-container .back-btn {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #dc4c05;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.Additionalform-container .back-btn {
+  background: #e8e6e5;
+  color: black;
+}
+
+.Additionalform-container .submit-btn:hover {
+  background: #b03a04;
+}
+
+.Additionalform-container .formButtons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Additionalform-container .formButtons .note {
+  width: 100%;
+  font-size: 12px;
+  color: red;
+}
+
+.Additionalform-container .formButtons1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  justify-content: end;
+}
+.Additionalform-container .formButtons1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.Additionalform-container .impInpute {
+  color: red;
+}

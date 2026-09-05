@@ -1,0 +1,10 @@
+{
+  "name": "seller-dashboard-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix Seller-frontend start",
+    "start": "npm --prefix Seller-frontend start",
+    "build": "npm --prefix Seller-frontend run build"
+  }
+}

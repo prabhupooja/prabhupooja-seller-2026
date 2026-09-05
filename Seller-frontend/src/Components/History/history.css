@@ -1,0 +1,238 @@
+.history-container {
+  padding: 20px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.history-container .history-header {
+  margin-bottom: 15px;
+}
+
+.history-container .history-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.history-container .history-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.history-container .history-tabs .tab {
+  padding: 8px 15px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history-container .history-tabs .active {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #555;
+  border: none;
+}
+
+.history-tabs button {
+  padding: 10px;
+  color: #555;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.history-tabs button.active-tab {
+  color: #cd5702;
+  border-bottom: 2px solid #cd5702;
+}
+
+.history-tabs button:hover {
+  color: #cd5702;
+}
+
+.history-container .history-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.history-container .history-controls .search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 7px 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.history-container .history-controls .search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  flex-grow: 1;
+}
+
+.history-container .history-controls .filter-btn,
+.history-container .history-controls .download-btn {
+  background-color: #f3efef;
+  color: #555;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.history-container .history-controls .date-range {
+  background-color: #f3efef;
+  color: #555;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.history-container .history-controls .date-picker {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.history-container .history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.history-container .history-table th,
+.history-container .history-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.history-container .history-table .OrderMsg {
+  width: 320px;
+}
+
+.history-container .history-table th {
+  font-weight: bold;
+}
+
+.history-container .history-table .product-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.search-icon-history {
+  color: gray;
+  font-size: 15px;
+}
+
+.history-container .history-table td.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-container .history-table td.product-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.history-container .history-table td.product-info span {
+  font-size: 14px;
+  color: #000;
+}
+
+.history-container .history-table td.product-info .product-info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  /* padding: 5px 10px; */
+  /* border-radius: 4px; */
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.processing {
+  /* background-color: #ff9800;  */
+  color: rgb(114, 80, 5);
+}
+
+.status.rejected {
+  /* background-color: #f44336;  */
+  color: red;
+}
+
+.status.credited {
+  /* background-color: #4caf50; */
+  color: rgba(2, 132, 253, 0.911);
+}
+
+.status.approved {
+  /* background-color: #2196f3; */
+  color: green;
+}
+
+.status.completed {
+  /* background-color: #9c27b0; */
+  color: #9c27b0;
+}
+
+.status.canceled {
+  /* background-color: #757575; */
+  color: #757575;
+}
+
+.history-container .paginationCard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.history-container .pagination {
+  display: flex;
+  justify-content: end;
+}
+
+.history-container .page-btn {
+  color: rgb(12, 12, 12);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.history-container .page-number {
+  padding: 5px 10px;
+  margin: 3px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.history-container .page-number.active {
+  border-color: rgb(210, 140, 9);
+  color: rgb(176, 117, 7);
+  font-weight: bold;
+}

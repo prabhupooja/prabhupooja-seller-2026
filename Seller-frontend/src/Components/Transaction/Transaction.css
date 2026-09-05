@@ -1,0 +1,14 @@
+.transactionContainer{
+    margin:0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.transactionBox1{
+    flex: 7.5;
+}
+
+.transactionBox2{
+    flex: 2.5;
+}

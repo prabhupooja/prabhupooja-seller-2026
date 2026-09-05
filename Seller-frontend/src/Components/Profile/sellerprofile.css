@@ -1,0 +1,103 @@
+.sellerprofile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-card {
+  /* max-width: 100%; */
+  width: 90%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-info {
+  background-color: #fff;
+  width: 275px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+}
+
+.profile-info h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.profile-photos h2 {
+  text-align: center;
+}
+
+.profile-photobox {
+  display: flex;
+}
+
+.photo-item {
+  width: 48%;
+  text-align: center;
+}
+
+.photo-item label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.photo-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selleredit_icon {
+  font-size: 20px;
+  margin-bottom: -1px;
+  /* padding-top: 14px; */
+  /* margin-top: 20px; */
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-photos {
+    flex-direction: column;
+  }
+
+  .photo-item {
+    width: 100%;
+  }
+}
